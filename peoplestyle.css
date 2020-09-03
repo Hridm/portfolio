@@ -1,0 +1,43 @@
+@charset "utf-8";
+body{
+    background-color: rgb(127, 175, 169);
+    color: rgb(3, 23, 41);
+    font: 18px Arial,Cursive, sans-serif;
+    margin:0px;
+    padding:0px;
+    line-height: 2em;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    
+}
+.btn{
+    background-color: tomato;
+    position:absolute;
+    height:30px ;
+    bottom:550px;
+    left:52%;
+    transform: translateX(-80%);
+}
+
+
+.people{
+    background-color:transparent;
+    float: left;
+    width: 80%;
+    margin-top: 15px;   
+    border-radius: 4px;
+}
+.image {
+    float: left;
+    width: 20%;
+    margin-top: 18px;
+}
+.ulist {
+    float: left;
+    width: 80%;
+    box-sizing:border-box;
+    
+}
