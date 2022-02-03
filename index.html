@@ -1,73 +1,454 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-    </head>
-    <body>
-        <section>
-            <nav>
-                <a href="#" class="logo">Welcome</a>
-                <ul>
-                    <li><a href="#x1" class="active">About me</a></li>
-                    <li><a href="#x2">Skills</a></li>
-                    <li><a href="#x3">Projects</a></li>
-                    <li><a href="#x4">Contact</a></li>
-                    <li><a href="https://hridm.github.io/portfolio/repopeople.html">Github Users</a></li>
-                </ul>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            </nav>
-            <div class="text-container">
-                <p>Hello,</p>
-                <p>I'M MD. ATIQUR RAHMAN</p>
-                <p>I'm Software Engineer & Web Developer.<br>
-                Currently I'm studying CSE in AIUB.</p>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Md. Atiqur Rahman | Software Engineer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <div class="page-container">
+        <div class="row">
+            <div class="col-lg-4">
+                <aside class="sidebar">
+                    <div class="sidebar-inner">
+                        <div class="profile-picture">
+                            <img src="images/profile-pic-xs.jpg" alt="">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Md. Atiqur Rahman abcd</h3>
+                            <p>Software Engineer</p>
+                        </div>
+                        <div class="mobile-menu-trigger">
+                            <button><span></span></button>
+                        </div>
+                        <div class="social-media">
+                            <ul>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/atiqur-rahman10/"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/Hrid65812017"><i
+                                        class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100049480073875"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="https://github.com/Hridm"><i
+                                        class="fab fa-github"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--profile-intro-->
+                        <div class="short-contact">
+                            <ul class="contact-info">
+                                <li>
+                                        <span>
+                                              <i class="fa fa-phone-alt"></i>
+                                        </span>
+
+                                    <span>
+                                            <strong>Phone</strong>
+                                              <a href="tel:01935042262">01935042262</a>
+                                        </span>
+
+                                </li>
+                                <li>
+                                        <span>
+                                              <i class="fa fa-envelope-open"></i>
+                                        </span>
+
+                                    <span>
+                                        <strong> Email</strong>
+                                            <a href="atiqurrahman0240@gmail.com">atiqurrahman0240@gmail.com</a>
+                                        </span>
+                                </li>
+                                <li>
+                                        <span>
+                                             <i class="fa fa-location-arrow"></i>
+                                        </span>
+
+                                    <span>
+                                            <strong>Location</strong>
+                                            <a target="_blank" href="https://goo.gl/maps/qAkU47xXS8Fbqt9XA">Khilkhet, Dhaka</a>
+                                        </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="download-cv">
+                            <a class="" target="_blank" href="images/Atiqur-Resume.pdf"> <i class="fa fa-download"></i>
+                                Download CV</a>
+                        </div>
+                    </div>
+                    <!--sidebar-->
+                </aside>
             </div>
-            <img src="mypic.jpg" class="pic" alt="pic">
-        </section>
-        
-        <div class="box-container">
-            <div class="box-1" id="x1">
-                <h1>About me</h1>
-                <p> 
-                    My name is Atiqur Rahman. I live in Rajshahi. I'm studying CSE in AIUB. I am a web and game developer also. I love football and anime. 
-                </p>
+            <div class="col-lg-8">
+                <main class="page-content">
+                    <nav class="main-navigation">
+                        <div class="menu-area-inner">
+                            <ul>
+                                <li class="active">
+                                    <a href="#about">
+                                        <i class="far fa-user"></i>
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#resume">
+                                        <i class="far fa-file-word"></i>
+                                        Resume
+                                    </a>
+                                </li>
+                                <li><a href="#portfolio">
+                                    <i class="fa fa-cubes"></i>
+                                    Projects
+                                </a></li>
+                                <li>
+                                    <a href="#contact">
+                                        <i class="fa fa-address-book"></i>
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
+                    </nav>
+                    <section id="about" class="page-section active-section">
+                        <div class="container-lg">
+
+                            <div class="row my-4">
+                                <div class="col-md-12">
+                                    <h2 class="mb-3">About Me</h2>
+                                    <p>
+                                        I am a Software enthusiast with a strong motivation to constantly develop professional skills, as well as create effective and unique softwares.
+                                    </p>
+                                </div> <!--col-->
+                            </div>
+                            <!--row-->
+                            <div class="row mb-5">
+                                <div class="col-md-12">
+                                    <h3 class="mb-4">What I do?</h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="service-box">
+
+                                        <i class="fas fa-drafting-compass fa-2x"></i>
+                                        <h4> Backend Development</h4>
+                                        <p>Develop 100% pixel perfect and mobile friendly website from any UI
+                                            design. Also improving existing UI/UX for any application. </p>
+
+
+                                    </div>
+                                    
+                                </div> <!--col-->
+                                <div class="col-sm-6">
+                                    
+                                    <div class="service-box">
+
+                                        <i class="fas fa-swatchbook fa-2x"></i>
+                                        <h4> UI/UX Design</h4>
+                                        <p> Creating game-changing products that evoke a sense of excitement, closeness
+                                            and satisfaction for the user.</p>
+
+
+                                    </div>
+                                
+
+                            </div>
+                            <!--row-->
+                        </div>
+                    </section>
+                    <section id="resume" class="page-section">
+                        <div class="container-lg">
+
+<!--                            <div class="row my-5">-->
+<!--                                <div class="col-md-12">-->
+<!--                                    <h3 class="mb-3">Resume</h3>-->
+
+<!--                                </div> -->
+<!--                            </div>-->
+
+                            <div class="row my-4">
+                                <div class="col-md-12">
+                                    <h3 class="mb-3">Skills</h3>
+                                    <ul class="skill-list">
+                                        <li>Java</li>
+                                        <li>Springboot</li>
+                                        <li>Spring Microservices</li>
+                                        <li>C++</li>
+                                        <li>Python</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>C#</li>
+                                        <li>MySQL</li>
+                                        <li>Postgre SQL</li>
+                                        <li>JavaScript</li>
+                                        <li>jQuery</li>
+                                        <li>PHP</li>
+                                        <li>Git</li>
+                                        <li>Figma</li>
+                                        <li>Adobe XD</li>
+                                        <li>Machine Learning</li>
+                                        <li>OpenCV</li>
+                                    </ul>
+                                </div> <!--col-->
+                            </div>
+                            <!--row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="mb-3">Experience</h3>
+
+                                </div> <!--col-->
+                            </div>
+                            <!--row-->
+                            <div class="row mb-5">
+                                <div class="col-sm-6">
+                                    <div class="card experience-card p-4">
+                                        <div class="card-body">
+                                            <a target="_blank" href="https://egeneration.co/"> <img width="180"
+                                                                                                    src="images/egeneration-logo.png"
+                                                                                                    alt=""></a>
+                                            <!--                                <h4><a target="_blank" href="https://commengine.xyz/">CommEngine</a></h4>-->
+                                            <p>Junior Software Engineer</p>
+                                            <p>June 2021 – Present</p>
+                                        </div>
+
+                                    </div>
+                                </div> <!--col-->
+                                
+                            <!--row-->
+                            <div class="row mb-5">
+                                <div class="col-md-12">
+                                    <h3 class="mb-3">Education</h3>
+                                    <ul class="education-list">
+                                        <li><strong> B.Sc. in Computer Science and Engineering (2021) :</strong> American International University Bangladesh; CGPA: 3.87 out of 4.00 </li>
+                                        <li><strong> HSC (Science, 2016):</strong> New Govt. Degree College, Rajshahi; GPA : 5.00
+                                        </li>
+                                        <li><strong> SSC (Science, 2014):</strong> Bholahat Rameshwar Pilot High School, Bholahat, Chapai Nawabganj; GPA : 5.00
+                                        </li>
+                                    </ul>
+                                </div> <!--col-->
+                            </div>
+                            <!--row-->
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-12">
+                                <h3 class="mb-3">Honors & Awards</h3>
+                                <ul class="education-list">
+                                    <li><strong> 
+                                        Dean's List Honors(2018 & 2019) :</strong> American International University Bangladesh. </li>
+                                    <li> This award is given to the students for excellent academic result for a particular semester of an academic year.
+                                    </li>
+                                </ul>
+                            </div> <!--col-->
+                        </div>
+                        <!--row-->
+                    </div>
+                    </section>
+                    <section id="portfolio" class="page-section">
+                        <div class="container-lg">
+                            <div class="row my-4">
+                                <div class="col">
+                                    <h2 class="mb-3">Projects</h2>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-12">
+                                    <div class="portfolio-wrapper">
+
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-inner">
+                                                <div class="service-box"><a target="_blank" href="#">
+
+                                                    <i class="fas fa-drafting-compass fa-2x"></i>
+                                                    <h4> Sylhet MAG Osmani Medical College Hospital Project</h4></a>
+                                                    <p>This is a hospital management system (HMS) for Sylhet MAG Osmani Medical College Hospital.</p>
+                                                </div>
+                                            </div> <!--portfolio-item-inner-->
+                                        </div> <!--portfolio-item-->
+
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-inner">
+                                                <div class="service-box"><a target="_blank" href="https://github.com/Hridm/Tutor_Finder">
+
+                                                    <i class="fas fa-drafting-compass fa-2x"></i>
+                                                    <h4> Tutor Finder</h4></a>
+                                                    <p>Basic Web project for finding tuition in online. Students can search, book their desired tutor here.</p>
+            
+            
+                                                </div>
+                                            </div> <!--portfolio-item-inner-->
+                                        </div> <!--portfolio-item-->
+
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-inner">
+                                                <div class="service-box"><a target="_blank" href="https://github.com/Hridm/Restaurant_Booking_System ">
+
+                                                    <i class="fas fa-drafting-compass fa-2x"></i>
+                                                    <h4> Restaurant Booking System</h4></a>
+                                                    <p>This is a basic C# project. By using this system customers can pre book restaurant their desired seats so that they don't have to wait for table at the restaurant.</p>
+            
+            
+                                                </div>
+                                            </div> <!--portfolio-item-inner-->
+                                        </div><!--portfolio-item-->
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-inner">
+                                                <div class="service-box"><a target="_blank" href="https://github.com/Hridm/cvpr ">
+
+                                                    <i class="fas fa-drafting-compass fa-2x"></i>
+                                                    <h4> Computer Vision Projects</h4></a>
+                                                    <p>Here I have done some deep learning based projects for my research and thesis work</p>
+            
+            
+                                                </div>
+                                            </div> <!--portfolio-item-inner-->
+                                        </div><!--portfolio-item-->
+
+                                    </div>
+                                    <!--portfolio-wrapper-->
+                                </div> <!--col-->
+                            </div>
+                            <!--row-->
+                        </div>
+                    </section>
+                    <section id="blog" class="page-section">
+                        <div class="container-lg">
+                            <div class="row my-4">
+                                <div class="col">
+                                    <h2 class="mb-3">Blogs</h2>
+                                </div>
+                            </div>
+                            <div class="blog-wrapper">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <img src="images/banner.jpg" alt="">
+                                    </div>
+                                    <!-- blog-thumb-->
+                                    <div class="blog-info">
+                                        <h3>Hello World</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque
+                                            dignissimos
+                                            fuga fugiat laboriosam nam pariatur, sed soluta vel vero. A ad alias aliquid
+                                            amet
+                                            assumenda at beatae consequatur distinctio dolores ducimus earum enim eos
+                                            esse, est
+                                            explicabo facere facilis <a href="">Read more</a>. </p>
+                                    </div>
+                                    <!-- blog-thumb-->
+                                </div>
+                                <!--blog-item-->
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <img src="images/banner.jpg" alt="">
+                                    </div>
+                                    <!-- blog-thumb-->
+                                    <div class="blog-info">
+                                        <h3>Hello World</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque
+                                            dignissimos
+                                            fuga fugiat laboriosam nam pariatur, sed soluta vel vero. A ad alias aliquid
+                                            amet
+                                            assumenda at beatae consequatur distinctio dolores ducimus earum enim eos
+                                            esse, est
+                                            explicabo facere facilis <a href="">Read more</a>. </p>
+                                    </div>
+                                    <!-- blog-thumb-->
+                                </div>
+                                <!--blog-item-->
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <img src="images/banner.jpg" alt="">
+                                    </div>
+                                    <!-- blog-thumb-->
+                                    <div class="blog-info">
+                                        <h3>Hello World</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque
+                                            dignissimos
+                                            fuga fugiat laboriosam nam pariatur, sed soluta vel vero. A ad alias aliquid
+                                            amet
+                                            assumenda at beatae consequatur distinctio dolores ducimus earum enim eos
+                                            esse, est
+                                            explicabo facere facilis <a href="">Read more</a>. </p>
+                                    </div>
+                                    <!-- blog-thumb-->
+                                </div>
+                                <!--blog-item-->
+                            </div>
+                            <!--blog-wrapper-->
+                        </div>
+                    </section>
+                    <section id="contact" class="page-section">
+                        <div class="container-lg">
+                            <div class="row my-4">
+                                <div class="col">
+                                    <h2 class="mb-3">Contact</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="">Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="">Mobile</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="">Phone</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="">Subject</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <label for="">Message</label>
+                                                <textarea class="form-control" name="" id="" cols="6"
+                                                          rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 offset-md-4 mb-3">
+                                                <input type="submit" value="Submit" class="btn btn-secondary w-100">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
             </div>
-            <div class="box-2"id="x2">
-                <h1>My Skills</h1>
-                <p> Algorthm : 80%<br>
-                   Data Structure : 70%<br>
-                   C++ : 80%<br>
-                   Java : 80%<br>
-                   C# : 70%<br>
-                   Python : 70%</p>
-                
-
-
-            </div>
-            <div class="box-3" id="x3">
-                <h1>Projects</h1>
-                <p>1. Coaching center management system<br>
-                    2. Aiub payment system<br>
-                    3. Find nearby doctors<br>
-                    4.Find your meal<br>
-                </p>
-
-            </div>
-            <div class="box-4" id="x4">
-                <h1 style="text-align: center;">Contact</h1>
-                <p> Email: atiqurrahman0240@gmail.com<br>
-                    Phone:01234567
-
-                </p>
-
-            </div>
-                
         </div>
-        <footer id="main-footer">
-            <p>Copyright &copy; 2020 My Site</p>
-        </footer>
-    </body>
+    </div>
+
+
+</div>
+<!--wrapper-->
+<script src="js/jquery.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
